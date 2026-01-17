@@ -5,7 +5,10 @@
   padding: 8px 4px;
 }
 .navbar .logo{
-  width: max(10%, 80px);
+color: #ff5722;
+}
+.navbar .h2{
+  color: #555;
 }
 .navbar .profile {
   width: 40px;
