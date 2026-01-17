@@ -26,9 +26,18 @@ app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
 
 app.get("/", (req, res) => {
-  res.send("API working");
+  res.send("API Working")
 });
 
-app.listen(port, () => {
-  console.log(`Server started on ${process.env.VITE_BACKEND_URL}`);
+app.get('/test-db', (req, res) => {
+  const state = mongoose.connection.readyState;
+  // 0 = disconnected, 1 = connected, 2 = connecting, 3 = disconnecting
+  if (state === 1) {
+    res.send('Database is connected');
+  } else {
+    res.status(500).send('Database is NOT connected');
+  }
 });
+
+
+app.listen(port, () => console.log(`Server started on PORT:${port}`))
