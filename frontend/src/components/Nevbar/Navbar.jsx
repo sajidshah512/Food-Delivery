@@ -74,6 +74,11 @@ const Navbar = ({ setShowLogin }) => {
                 <img src={assets.logout_icon} alt="" />
                 <p>Logout</p>
               </li>
+              <hr />
+              <li onClick={() => window.open("https://food-del-admin-fawn.vercel.app/add", "_blank")}>
+                <img src={assets.admin_icon} alt="" />
+                <p>Admin</p>
+              </li>
             </ul>
           </div>
         )}

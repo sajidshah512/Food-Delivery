@@ -58,6 +58,7 @@ import rating_starts from './rating_starts.png'
 import profile_icon from './profile_icon.png'
 import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
+import admin_icon from './admin_icon.png'
 import parcel_icon from './parcel_icon.png'
 
 export const assets = {
@@ -78,6 +79,7 @@ export const assets = {
     selector_icon,
     profile_icon,
     logout_icon,
+    admin_icon,
     bag_icon,
     parcel_icon
 }
